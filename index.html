@@ -3,98 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PREMIUM - Luxury Experience</title>
+    <title>PREMIUM - Ultimate Luxe Experience</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
             /* Theme 1: Luxe Doré (Origine / Sombre) */
-            --bg-dark: #070709;
-            --card-bg: rgba(18, 18, 26, 0.65);
-            --card-bg-hover: rgba(28, 28, 40, 0.75);
-            --border-color: rgba(212, 175, 55, 0.18);
-            --border-glow: rgba(212, 175, 55, 0.4);
+            --bg-dark: #060608;
+            --card-bg: rgba(18, 18, 26, 0.55);
+            --card-bg-hover: rgba(28, 28, 42, 0.7);
+            --border-color: rgba(212, 175, 55, 0.15);
+            --border-glow: rgba(212, 175, 55, 0.45);
             --accent-gold: #D4AF37;
             --accent-gold-light: #F3E5AB;
-            --accent-gold-gradient: linear-gradient(135deg, #BF953F 0%, #FCF6BA 25%, #B38728 50%, #FBF5B7 75%, #AA771C 100%);
+            --accent-gold-gradient: linear-gradient(135deg, #BF953F 0%, #FCF6BA 30%, #B38728 70%, #AA771C 100%);
             --accent-purple: #8B5CF6;
-            --accent-purple-glow: rgba(139, 92, 246, 0.35);
+            --accent-purple-glow: rgba(139, 92, 246, 0.25);
             --text-main: #F3F4F6;
-            --text-muted: #9CA3AF;
+            --text-muted: #8E95A5;
             --text-gold: #E5C158;
             --orb-1: #8B5CF6;
             --orb-2: #D4AF37;
-            --nav-bg: rgba(12, 12, 18, 0.85);
-            --btn-text: #070709;
-            --glass-blur: blur(24px);
-            --radius-lg: 24px;
-            --radius-md: 16px;
-            --radius-sm: 12px;
+            --nav-bg: rgba(10, 10, 15, 0.75);
+            --btn-text: #060608;
+            --glass-blur: blur(28px);
+            --radius-lg: 28px;
+            --radius-md: 18px;
+            --radius-sm: 14px;
             --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
-        /* Theme 2: Amber Honey & Linen (Bascoulé en SOMBRE / Night Amber) */
+        /* Theme 2: Amber Honey & Linen (Sombre / Night Amber) */
         [data-theme="amber-honey"] {
-            --bg-dark: #120C08;
-            --card-bg: rgba(28, 20, 15, 0.75);
-            --card-bg-hover: rgba(42, 30, 22, 0.85);
-            --border-color: rgba(217, 119, 6, 0.25);
+            --bg-dark: #0D0906;
+            --card-bg: rgba(28, 20, 15, 0.65);
+            --card-bg-hover: rgba(42, 30, 22, 0.8);
+            --border-color: rgba(217, 119, 6, 0.2);
             --border-glow: rgba(245, 158, 11, 0.5);
             --accent-gold: #F59E0B;
             --accent-gold-light: #FDE68A;
             --accent-gold-gradient: linear-gradient(135deg, #B45309 0%, #D97706 50%, #F59E0B 100%);
             --accent-purple: #D97706;
-            --accent-purple-glow: rgba(245, 158, 11, 0.25);
+            --accent-purple-glow: rgba(245, 158, 11, 0.2);
             --text-main: #FDFBF7;
-            --text-muted: #D1C5B8;
+            --text-muted: #B3A598;
             --text-gold: #F59E0B;
             --orb-1: #D97706;
             --orb-2: #B45309;
-            --nav-bg: rgba(18, 12, 8, 0.9);
-            --btn-text: #120C08;
+            --nav-bg: rgba(13, 9, 6, 0.8);
+            --btn-text: #0D0906;
         }
 
         /* Theme 3: Terracotta & Sunbaked Earth (Clair) */
         [data-theme="terracotta"] {
             --bg-dark: #FBF6F0;
-            --card-bg: rgba(255, 250, 245, 0.8);
-            --card-bg-hover: rgba(255, 243, 235, 0.92);
-            --border-color: rgba(200, 90, 50, 0.2);
+            --card-bg: rgba(255, 250, 245, 0.75);
+            --card-bg-hover: rgba(255, 243, 235, 0.9);
+            --border-color: rgba(200, 90, 50, 0.18);
             --border-glow: rgba(224, 122, 95, 0.5);
             --accent-gold: #C85A32;
             --accent-gold-light: #F2CCB7;
             --accent-gold-gradient: linear-gradient(135deg, #C85A32 0%, #E07A5F 50%, #F2A68D 100%);
             --accent-purple: #E07A5F;
-            --accent-purple-glow: rgba(224, 122, 95, 0.2);
+            --accent-purple-glow: rgba(224, 122, 95, 0.15);
             --text-main: #2B1E1A;
-            --text-muted: #6B534C;
+            --text-muted: #7A625A;
             --text-gold: #C85A32;
             --orb-1: #E07A5F;
             --orb-2: #C85A32;
-            --nav-bg: rgba(251, 246, 240, 0.9);
+            --nav-bg: rgba(251, 246, 240, 0.85);
             --btn-text: #FFFFFF;
         }
 
         /* Theme 4: Golden Bamboo & Olive (Clair) */
         [data-theme="bamboo-olive"] {
             --bg-dark: #F3F5F2;
-            --card-bg: rgba(255, 255, 255, 0.85);
+            --card-bg: rgba(255, 255, 255, 0.8);
             --card-bg-hover: rgba(243, 247, 241, 0.95);
-            --border-color: rgba(163, 177, 138, 0.3);
+            --border-color: rgba(163, 177, 138, 0.25);
             --border-glow: rgba(212, 163, 115, 0.5);
             --accent-gold: #D4A373;
             --accent-gold-light: #E9D8A6;
             --accent-gold-gradient: linear-gradient(135deg, #D4A373 0%, #A3B18A 50%, #CCD5AE 100%);
             --accent-purple: #A3B18A;
-            --accent-purple-glow: rgba(163, 177, 138, 0.25);
+            --accent-purple-glow: rgba(163, 177, 138, 0.2);
             --text-main: #1A2E26;
-            --text-muted: #526B60;
+            --text-muted: #5C756B;
             --text-gold: #B58252;
             --orb-1: #A3B18A;
             --orb-2: #D4A373;
-            --nav-bg: rgba(243, 245, 242, 0.9);
+            --nav-bg: rgba(243, 245, 242, 0.85);
             --btn-text: #FFFFFF;
         }
 
@@ -113,14 +113,14 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            padding: 20px 10px 100px 10px;
+            padding: 15px 10px 110px 10px;
             background-image: 
-                radial-gradient(circle at 15% 15%, var(--accent-purple-glow) 0%, transparent 40%),
-                radial-gradient(circle at 85% 60%, rgba(212, 175, 55, 0.08) 0%, transparent 45%),
-                radial-gradient(circle at 50% 90%, var(--accent-purple-glow) 0%, transparent 50%);
+                radial-gradient(circle at 10% 10%, var(--accent-purple-glow) 0%, transparent 45%),
+                radial-gradient(circle at 90% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+                radial-gradient(circle at 50% 85%, var(--accent-purple-glow) 0%, transparent 45%);
             background-attachment: fixed;
             overflow-x: hidden;
-            transition: background-color 0.5s ease, color 0.5s ease;
+            transition: background-color 0.6s ease, color 0.6s ease;
         }
 
         .app-container {
@@ -128,11 +128,11 @@
             max-width: 480px;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 22px;
             position: relative;
         }
 
-        /* Ambient subtle animation background particle effect */
+        /* Ambient Glow Background Particles */
         .ambient-glow {
             position: fixed;
             top: 0;
@@ -149,32 +149,32 @@
         .glow-orb {
             position: absolute;
             border-radius: 50%;
-            filter: blur(80px);
-            opacity: 0.4;
-            animation: float 12s infinite alternate ease-in-out;
-            transition: background 0.5s ease;
+            filter: blur(90px);
+            opacity: 0.35;
+            animation: float 14s infinite alternate ease-in-out;
+            transition: background 0.6s ease;
         }
 
         .glow-orb-1 {
-            width: 250px;
-            height: 250px;
+            width: 280px;
+            height: 280px;
             background: var(--orb-1);
-            top: 5%;
-            left: -10%;
+            top: -2%;
+            left: -15%;
         }
 
         .glow-orb-2 {
-            width: 200px;
-            height: 200px;
+            width: 240px;
+            height: 240px;
             background: var(--orb-2);
-            top: 45%;
-            right: -10%;
-            animation-delay: -6s;
+            top: 50%;
+            right: -15%;
+            animation-delay: -7s;
         }
 
         @keyframes float {
-            0% { transform: translateY(0) scale(1); }
-            100% { transform: translateY(30px) scale(1.1); }
+            0% { transform: translateY(0) scale(1) rotate(0deg); }
+            100% { transform: translateY(35px) scale(1.12) rotate(10deg); }
         }
 
         .font-serif {
@@ -188,15 +188,44 @@
             display: inline-block;
         }
 
-        /* Glassmorphic Base Card */
+        /* DYNAMIC STATUS BAR / PILL */
+        .status-pill-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-color);
+            padding: 6px 14px;
+            border-radius: 30px;
+            backdrop-filter: blur(12px);
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .status-live-dot {
+            width: 6px;
+            height: 6px;
+            background-color: #10B981;
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px #10B981;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.85); }
+        }
+
+        /* GLASS CARD (WITH MOUSE TRACKING INTERACTION) */
         .glass-card {
             background: var(--card-bg);
             backdrop-filter: var(--glass-blur);
             -webkit-backdrop-filter: var(--glass-blur);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-lg);
-            padding: 22px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            padding: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.15);
             transition: var(--transition-smooth);
             position: relative;
             z-index: 1;
@@ -205,7 +234,8 @@
 
         .glass-card:hover {
             border-color: var(--border-glow);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12), 0 0 20px var(--border-glow);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18), 0 0 25px var(--accent-purple-glow);
+            transform: translateY(-2px);
         }
 
         /* HEADER */
@@ -213,36 +243,42 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 5px;
+            padding: 5px 2px;
             z-index: 2;
         }
 
         .brand-title {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 26px;
+            font-size: 28px;
             font-weight: 700;
-            letter-spacing: 4px;
+            letter-spacing: 5px;
             text-transform: uppercase;
             line-height: 1;
         }
 
         .brand-subtitle {
-            font-size: 11px;
-            letter-spacing: 2px;
+            font-size: 10px;
+            letter-spacing: 3px;
             color: var(--text-muted);
             text-transform: uppercase;
-            margin-top: 4px;
+            margin-top: 5px;
+            font-weight: 600;
         }
 
         .profile-avatar-wrapper {
             position: relative;
-            width: 50px;
-            height: 50px;
+            width: 52px;
+            height: 52px;
             border-radius: 50%;
             padding: 2px;
             background: var(--accent-gold-gradient);
             cursor: pointer;
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-avatar-wrapper:hover {
+            transform: scale(1.05);
         }
 
         .profile-avatar-wrapper img {
@@ -255,11 +291,11 @@
 
         .verified-badge-mini {
             position: absolute;
-            bottom: -2px;
-            right: -2px;
+            bottom: -1px;
+            right: -1px;
             background: #10B981;
-            width: 14px;
-            height: 14px;
+            width: 15px;
+            height: 15px;
             border-radius: 50%;
             border: 2px solid var(--bg-dark);
             display: flex;
@@ -267,23 +303,25 @@
             justify-content: center;
             font-size: 8px;
             color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
 
         /* AMBIANCE / THEME SELECTOR */
         .ambiance-selector-container {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
-            padding: 12px 16px;
+            padding: 14px 18px;
+            backdrop-filter: var(--glass-blur);
         }
 
         .ambiance-label {
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 1.5px;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 2px;
             text-transform: uppercase;
             color: var(--text-muted);
         }
@@ -291,30 +329,29 @@
         .ambiance-options {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
+            gap: 10px;
         }
 
         .ambiance-btn {
-            background: rgba(0, 0, 0, 0.04);
+            background: rgba(255, 255, 255, 0.03);
             border: 1px solid var(--border-color);
             color: var(--text-main);
-            padding: 8px 10px;
-            border-radius: 12px;
-            font-size: 11px;
+            padding: 10px 12px;
+            border-radius: var(--radius-sm);
+            font-size: 11.5px;
             font-weight: 600;
             cursor: pointer;
             transition: var(--transition-smooth);
             display: flex;
             align-items: center;
-            gap: 6px;
-            text-align: left;
+            gap: 8px;
         }
 
         .ambiance-btn.active, .ambiance-btn:hover {
             background: var(--accent-gold-gradient);
             color: var(--btn-text);
             border-color: transparent;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
         }
 
         /* SEARCH BAR */
@@ -322,17 +359,18 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            padding: 14px 18px;
+            padding: 14px 20px;
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: 50px;
-            backdrop-filter: blur(12px);
+            backdrop-filter: blur(16px);
             transition: var(--transition-smooth);
         }
 
         .search-box:focus-within {
             border-color: var(--accent-gold);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+            transform: translateY(-1px);
         }
 
         .search-box input {
@@ -340,7 +378,7 @@
             border: none;
             outline: none;
             color: var(--text-main);
-            font-size: 14px;
+            font-size: 13.5px;
             width: 100%;
             font-family: inherit;
         }
@@ -358,50 +396,48 @@
 
         /* HERO BANNER */
         .hero-banner {
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
             position: relative;
-            overflow: hidden;
         }
 
         .badge-tag {
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            padding: 6px 14px;
+            padding: 5px 12px;
             border-radius: 30px;
-            background: rgba(212, 175, 55, 0.12);
+            background: rgba(212, 175, 55, 0.1);
             border: 1px solid var(--border-color);
-            font-size: 11px;
-            font-weight: 600;
-            letter-spacing: 1.5px;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 1.8px;
             color: var(--accent-gold);
             text-transform: uppercase;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
         }
 
         .hero-title {
-            font-size: 28px;
+            font-size: 30px;
             font-weight: 700;
             margin-bottom: 8px;
-            line-height: 1.2;
+            line-height: 1.15;
+            letter-spacing: -0.5px;
         }
 
         .hero-desc {
-            font-size: 13.5px;
+            font-size: 13px;
             color: var(--text-muted);
             line-height: 1.6;
-            margin-bottom: 20px;
+            margin-bottom: 22px;
         }
 
         .action-btn-gold {
             background: var(--accent-gold-gradient);
             color: var(--btn-text);
             font-weight: 700;
-            font-size: 13px;
-            letter-spacing: 1px;
+            font-size: 12px;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
-            padding: 14px 26px;
+            padding: 15px 28px;
             border-radius: 50px;
             border: none;
             cursor: pointer;
@@ -410,12 +446,12 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
+            gap: 10px;
         }
 
         .action-btn-gold:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+            transform: translateY(-2px) scale(1.01);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.28);
         }
 
         /* QUICK ACTIONS */
@@ -428,8 +464,8 @@
 
         .section-header h2 {
             font-size: 16px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
+            font-weight: 700;
+            letter-spacing: 0.2px;
         }
 
         .section-header .see-all {
@@ -437,7 +473,7 @@
             color: var(--accent-gold);
             text-decoration: none;
             cursor: pointer;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .quick-actions-grid {
@@ -457,19 +493,22 @@
             gap: 10px;
             cursor: pointer;
             transition: var(--transition-smooth);
+            backdrop-filter: var(--glass-blur);
         }
 
         .quick-action-item:hover {
             background: var(--card-bg-hover);
             border-color: var(--border-glow);
-            transform: translateY(-3px);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
         .quick-action-icon {
-            width: 42px;
-            height: 42px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
-            background: rgba(0, 0, 0, 0.04);
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-color);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -480,40 +519,44 @@
         .quick-action-item:hover .quick-action-icon {
             background: var(--accent-gold-gradient);
             color: var(--btn-text);
+            border-color: transparent;
         }
 
         .quick-action-label {
             font-size: 11px;
-            font-weight: 500;
+            font-weight: 600;
             color: var(--text-main);
         }
 
-        /* CREDIT CARD WIDGET */
+        /* HOLOGRAPHIC LUXURY CREDIT CARD */
         .credit-card {
-            background: linear-gradient(135deg, #181528 0%, #090810 100%);
-            border: 1px solid var(--border-color);
-            border-radius: 20px;
+            background: linear-gradient(135deg, rgba(25, 20, 35, 0.95) 0%, rgba(10, 8, 15, 0.98) 100%);
+            border: 1px solid var(--border-glow);
+            border-radius: 22px;
             padding: 24px;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.45);
             aspect-ratio: 1.58 / 1;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: transform 0.1s ease-out;
+            transition: transform 0.15s ease-out;
             color: #F3F4F6;
         }
 
-        .credit-card::before {
+        /* Shimmer Effect on Card */
+        .credit-card::after {
             content: '';
             position: absolute;
-            top: -100px;
-            right: -100px;
-            width: 250px;
-            height: 250px;
-            background: radial-gradient(circle, var(--accent-purple-glow) 0%, transparent 70%);
-            border-radius: 50%;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(60deg, transparent 30%, rgba(255, 255, 255, 0.08) 50%, transparent 70%);
+            transform: rotate(30deg);
+            transition: opacity 0.5s;
+            pointer-events: none;
         }
 
         .card-top {
@@ -524,29 +567,28 @@
         }
 
         .card-type {
-            font-size: 12px;
-            font-weight: 700;
+            font-size: 11px;
+            font-weight: 800;
             letter-spacing: 2px;
             text-transform: uppercase;
         }
 
         .card-chip {
-            width: 38px;
-            height: 28px;
+            width: 40px;
+            height: 30px;
             background: linear-gradient(135deg, #e0aa3e 0%, #f9f5b0 50%, #b8860b 100%);
             border-radius: 6px;
-            position: relative;
-            overflow: hidden;
+            box-shadow: inset 0 0 4px rgba(0,0,0,0.4);
         }
 
         .card-number {
             font-family: 'Courier New', Courier, monospace;
-            font-size: 20px;
+            font-size: 21px;
             letter-spacing: 3px;
             z-index: 2;
-            word-spacing: 6px;
+            word-spacing: 5px;
             margin: 15px 0;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+            text-shadow: 0 2px 4px rgba(0,0,0,0.9);
         }
 
         .card-bottom {
@@ -566,7 +608,7 @@
 
         .card-holder-name {
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 700;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
@@ -579,7 +621,7 @@
         }
 
         .metric-card {
-            background: var(--card-bg);
+            background: rgba(255, 255, 255, 0.02);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
             padding: 16px;
@@ -589,13 +631,14 @@
         }
 
         .metric-label {
-            font-size: 12px;
+            font-size: 11.5px;
             color: var(--text-muted);
+            font-weight: 500;
         }
 
         .metric-val {
             font-size: 22px;
-            font-weight: 700;
+            font-weight: 800;
             font-variant-numeric: tabular-nums;
         }
 
@@ -608,7 +651,7 @@
         /* ANALYTICS CHART SIMULATION */
         .chart-container {
             width: 100%;
-            height: 120px;
+            height: 125px;
             position: relative;
         }
 
@@ -621,7 +664,7 @@
         .chart-line {
             fill: none;
             stroke: url(#goldGradient);
-            stroke-width: 3;
+            stroke-width: 3.5;
             stroke-linecap: round;
         }
 
@@ -640,8 +683,8 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 12px;
-            background: var(--card-bg);
+            padding: 14px;
+            background: rgba(255, 255, 255, 0.02);
             border-radius: var(--radius-sm);
             border: 1px solid var(--border-color);
             transition: var(--transition-smooth);
@@ -659,9 +702,9 @@
         }
 
         .portfolio-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
             background: rgba(212, 175, 55, 0.1);
             border: 1px solid var(--border-color);
             display: flex;
@@ -673,7 +716,7 @@
 
         .portfolio-title {
             font-size: 13.5px;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .portfolio-subtitle {
@@ -683,11 +726,11 @@
 
         .portfolio-value {
             text-align: right;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 13.5px;
         }
 
-        /* FEATURED / AI WIDGET */
+        /* FEATURED CARDS */
         .featured-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -698,18 +741,20 @@
             background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
-            padding: 16px;
+            padding: 18px;
+            backdrop-filter: var(--glass-blur);
         }
 
         .featured-card h3 {
             font-size: 14px;
-            margin: 8px 0 6px 0;
+            margin: 10px 0 6px 0;
+            font-weight: 700;
         }
 
         .featured-card p {
             font-size: 11.5px;
             color: var(--text-muted);
-            line-height: 1.4;
+            line-height: 1.45;
         }
 
         /* MUSIC / AMBIANCE PLAYER */
@@ -717,20 +762,19 @@
             display: flex;
             align-items: center;
             gap: 14px;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            padding: 14px;
+            padding: 16px;
         }
 
         .player-cover {
-            width: 50px;
-            height: 50px;
+            width: 52px;
+            height: 52px;
             border-radius: var(--radius-sm);
             background: var(--accent-gold-gradient);
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
 
         .player-info {
@@ -738,8 +782,8 @@
         }
 
         .player-title {
-            font-size: 13px;
-            font-weight: 600;
+            font-size: 13.5px;
+            font-weight: 700;
         }
 
         .player-artist {
@@ -763,8 +807,8 @@
         }
 
         .control-btn-play {
-            width: 34px;
-            height: 34px;
+            width: 36px;
+            height: 36px;
             border-radius: 50%;
             background: var(--accent-gold-gradient);
             color: var(--btn-text);
@@ -786,8 +830,8 @@
         }
 
         .notif-icon {
-            width: 36px;
-            height: 36px;
+            width: 38px;
+            height: 38px;
             border-radius: 50%;
             background: var(--accent-purple-glow);
             color: var(--accent-gold);
@@ -799,7 +843,7 @@
 
         .notif-content h4 {
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .notif-content p {
@@ -835,7 +879,7 @@
             position: relative;
             width: 44px;
             height: 24px;
-            background: rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.1);
             border-radius: 30px;
             cursor: pointer;
             transition: background 0.3s;
@@ -864,22 +908,22 @@
         /* BOTTOM NAV BAR */
         .bottom-nav {
             position: fixed;
-            bottom: 15px;
+            bottom: 20px;
             left: 50%;
             transform: translateX(-50%);
             width: calc(100% - 30px);
-            max-width: 450px;
+            max-width: 440px;
             background: var(--nav-bg);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
             border: 1px solid var(--border-color);
             border-radius: 40px;
-            padding: 10px 20px;
+            padding: 12px 24px;
             display: flex;
             justify-style: space-around;
             align-items: center;
             z-index: 100;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
         }
 
         .nav-item {
@@ -890,7 +934,7 @@
             color: var(--text-muted);
             text-decoration: none;
             font-size: 10px;
-            font-weight: 500;
+            font-weight: 600;
             transition: var(--transition-smooth);
             cursor: pointer;
         }
@@ -919,8 +963,8 @@
         }
 
         .user-profile-img {
-            width: 60px;
-            height: 60px;
+            width: 62px;
+            height: 62px;
             border-radius: 50%;
             border: 2px solid var(--accent-gold);
             object-fit: cover;
@@ -944,9 +988,9 @@
             font-weight: 700;
             color: var(--accent-gold);
             background: rgba(212, 175, 55, 0.12);
-            padding: 3px 8px;
+            padding: 3px 10px;
             border-radius: 12px;
-            margin-top: 4px;
+            margin-top: 5px;
             border: 1px solid var(--border-color);
         }
     </style>
@@ -960,6 +1004,15 @@
 
     <div class="app-container">
 
+        <!-- DYNAMIC STATUS BAR -->
+        <div class="status-pill-bar">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <span class="status-live-dot"></span>
+                <span>Marché Ouvert • Gold +0.8%</span>
+            </div>
+            <span style="font-weight: 700; color: var(--accent-gold);">CONCIERGE VIP</span>
+        </div>
+
         <!-- HEADER -->
         <header>
             <div>
@@ -972,7 +1025,7 @@
             </div>
         </header>
 
-        <!-- SÉLECTEUR D'AMBIANCE (2 SOMBRES, 2 CLAIRS) -->
+        <!-- SÉLECTEUR D'AMBIANCE -->
         <div class="ambiance-selector-container">
             <span class="ambiance-label">Sélecteur d'Ambiance</span>
             <div class="ambiance-options">
@@ -994,7 +1047,7 @@
         <!-- SEARCH BAR -->
         <div class="search-box">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
-            <input type="text" placeholder="Rechercher un actif, une fonction...">
+            <input type="text" placeholder="Rechercher un actif, un service...">
         </div>
 
         <!-- HERO WELCOME BANNER -->
@@ -1002,7 +1055,7 @@
             <span class="badge-tag">✦ Privilèges Exclusifs</span>
             <h2 class="hero-title">Welcome Back</h2>
             <p class="hero-desc">
-                Expérience haut de gamme optimisée : verre sculpté, accents organiques, réactivité haptique et intelligence artificielle dédiée.
+                Interface haute fidélité : verre sculpté, profondeur dynamique, retours haptiques et concierge personnel.
             </p>
             <button class="action-btn-gold" onclick="triggerHaptic()">
                 Explorer l'Espace Elite
@@ -1252,10 +1305,10 @@
         </section>
 
         <!-- UPGRADE TO ELITE BANNER -->
-        <section class="glass-card" style="text-align: center; padding: 30px 20px;">
+        <section class="glass-card" style="text-align: center; padding: 32px 20px;">
             <span class="badge-tag">OFFRE LIMITÉE</span>
-            <h2 class="font-serif gold-text" style="font-size: 28px; margin: 10px 0;">Passer à l'Édition Elite</h2>
-            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; line-height: 1.5;">
+            <h2 class="font-serif gold-text" style="font-size: 30px; margin: 10px 0;">Passer à l'Édition Elite</h2>
+            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 22px; line-height: 1.55;">
                 Débloquez l'accès illimité aux conseils financiers personnalisés par IA, un gestionnaire de compte dédié et zéro frais de transaction.
             </p>
             <button class="action-btn-gold" style="width: 100%;" onclick="triggerHaptic()">
@@ -1286,7 +1339,7 @@
     </nav>
 
     <script>
-        // Gestion du sélecteur d'ambiances (4 thèmes)
+        // Gestion du sélecteur d'ambiances
         function switchTheme(themeName) {
             triggerHaptic();
             const root = document.documentElement;
@@ -1315,14 +1368,14 @@
             switchTheme(savedTheme);
         });
 
-        // Retours haptiques (Vibration tactile douce sur mobile)
+        // Retours haptiques
         function triggerHaptic() {
             if ("vibrate" in navigator) {
                 navigator.vibrate(15);
             }
         }
 
-        // Effet 3D Tilt sur la Carte Bancaire
+        // Effet 3D Tilt dynamique sur la Carte Bancaire
         const card = document.getElementById('creditCard');
         if (card) {
             document.addEventListener('mousemove', (e) => {
@@ -1330,7 +1383,7 @@
                 const x = e.clientX - rect.left - rect.width / 2;
                 const y = e.clientY - rect.top - rect.height / 2;
                 if (rect.top > 0 && rect.bottom < window.innerHeight) {
-                    card.style.transform = `perspective(1000px) rotateY(${x * 0.03}deg) rotateX(${-y * 0.03}deg)`;
+                    card.style.transform = `perspective(1000px) rotateY(${x * 0.04}deg) rotateX(${-y * 0.04}deg)`;
                 }
             });
         }
