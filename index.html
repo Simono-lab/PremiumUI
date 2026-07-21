@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* Theme 1: Luxe Doré (Default) */
+            /* Theme 1: Luxe Doré (Origine / Default) */
             --bg-dark: #070709;
             --card-bg: rgba(18, 18, 26, 0.65);
             --card-bg-hover: rgba(28, 28, 40, 0.75);
@@ -26,6 +26,8 @@
             --text-gold: #E5C158;
             --orb-1: #8B5CF6;
             --orb-2: #D4AF37;
+            --nav-bg: rgba(12, 12, 18, 0.85);
+            --btn-text: #070709;
             --glass-blur: blur(24px);
             --radius-lg: 24px;
             --radius-md: 16px;
@@ -33,42 +35,67 @@
             --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
-        /* Theme 2: Cyberpunk Néon */
-        [data-theme="cyberpunk"] {
-            --bg-dark: #05050a;
-            --card-bg: rgba(15, 10, 25, 0.7);
-            --card-bg-hover: rgba(25, 15, 40, 0.8);
-            --border-color: rgba(236, 72, 153, 0.3);
-            --border-glow: rgba(6, 182, 212, 0.6);
-            --accent-gold: #06B6D4;
-            --accent-gold-light: #A5F3FC;
-            --accent-gold-gradient: linear-gradient(135deg, #EC4899 0%, #3B82F6 50%, #06B6D4 100%);
-            --accent-purple: #EC4899;
-            --accent-purple-glow: rgba(236, 72, 153, 0.4);
-            --text-main: #F8FAFC;
-            --text-muted: #94A3B8;
-            --text-gold: #38BDF8;
-            --orb-1: #EC4899;
-            --orb-2: #06B6D4;
+        /* Theme 2: Amber Honey & Linen */
+        [data-theme="amber-honey"] {
+            --bg-dark: #FDFBF7;
+            --card-bg: rgba(255, 252, 245, 0.85);
+            --card-bg-hover: rgba(255, 248, 235, 0.95);
+            --border-color: rgba(217, 119, 6, 0.2);
+            --border-glow: rgba(245, 158, 11, 0.5);
+            --accent-gold: #D97706;
+            --accent-gold-light: #FBF5B7;
+            --accent-gold-gradient: linear-gradient(135deg, #D97706 0%, #F59E0B 50%, #FBBF24 100%);
+            --accent-purple: #F59E0B;
+            --accent-purple-glow: rgba(245, 158, 11, 0.2);
+            --text-main: #3B2F2F;
+            --text-muted: #786464;
+            --text-gold: #D97706;
+            --orb-1: #F59E0B;
+            --orb-2: #D97706;
+            --nav-bg: rgba(253, 251, 247, 0.9);
+            --btn-text: #FFFFFF;
         }
 
-        /* Theme 3: Serein Émeraude */
-        [data-theme="serene"] {
-            --bg-dark: #040d08;
-            --card-bg: rgba(10, 25, 18, 0.65);
-            --card-bg-hover: rgba(18, 40, 28, 0.75);
-            --border-color: rgba(16, 185, 129, 0.25);
-            --border-glow: rgba(52, 211, 153, 0.5);
-            --accent-gold: #10B981;
-            --accent-gold-light: #A7F3D0;
-            --accent-gold-gradient: linear-gradient(135deg, #059669 0%, #34D399 50%, #6EE7B7 100%);
-            --accent-purple: #059669;
-            --accent-purple-glow: rgba(16, 185, 129, 0.35);
-            --text-main: #F0FDF4;
-            --text-muted: #86EFAC;
-            --text-gold: #34D399;
-            --orb-1: #059669;
-            --orb-2: #34D399;
+        /* Theme 3: Terracotta & Sunbaked Earth */
+        [data-theme="terracotta"] {
+            --bg-dark: #FBF6F0;
+            --card-bg: rgba(255, 250, 245, 0.8);
+            --card-bg-hover: rgba(255, 243, 235, 0.92);
+            --border-color: rgba(200, 90, 50, 0.2);
+            --border-glow: rgba(224, 122, 95, 0.5);
+            --accent-gold: #C85A32;
+            --accent-gold-light: #F2CCB7;
+            --accent-gold-gradient: linear-gradient(135deg, #C85A32 0%, #E07A5F 50%, #F2A68D 100%);
+            --accent-purple: #E07A5F;
+            --accent-purple-glow: rgba(224, 122, 95, 0.2);
+            --text-main: #2B1E1A;
+            --text-muted: #6B534C;
+            --text-gold: #C85A32;
+            --orb-1: #E07A5F;
+            --orb-2: #C85A32;
+            --nav-bg: rgba(251, 246, 240, 0.9);
+            --btn-text: #FFFFFF;
+        }
+
+        /* Theme 4: Golden Bamboo & Olive */
+        [data-theme="bamboo-olive"] {
+            --bg-dark: #F3F5F2;
+            --card-bg: rgba(255, 255, 255, 0.85);
+            --card-bg-hover: rgba(243, 247, 241, 0.95);
+            --border-color: rgba(163, 177, 138, 0.3);
+            --border-glow: rgba(212, 163, 115, 0.5);
+            --accent-gold: #D4A373;
+            --accent-gold-light: #E9D8A6;
+            --accent-gold-gradient: linear-gradient(135deg, #D4A373 0%, #A3B18A 50%, #CCD5AE 100%);
+            --accent-purple: #A3B18A;
+            --accent-purple-glow: rgba(163, 177, 138, 0.25);
+            --text-main: #1A2E26;
+            --text-muted: #526B60;
+            --text-gold: #B58252;
+            --orb-1: #A3B18A;
+            --orb-2: #D4A373;
+            --nav-bg: rgba(243, 245, 242, 0.9);
+            --btn-text: #FFFFFF;
         }
 
         * {
@@ -169,7 +196,7 @@
             border: 1px solid var(--border-color);
             border-radius: var(--radius-lg);
             padding: 22px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.2);
             transition: var(--transition-smooth);
             position: relative;
             z-index: 1;
@@ -178,7 +205,7 @@
 
         .glass-card:hover {
             border-color: var(--border-glow);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px var(--border-glow);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12), 0 0 20px var(--border-glow);
         }
 
         /* HEADER */
@@ -245,48 +272,49 @@
         /* AMBIANCE / THEME SELECTOR */
         .ambiance-selector-container {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: rgba(0, 0, 0, 0.2);
+            flex-direction: column;
+            gap: 10px;
+            background: var(--card-bg);
             border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
             padding: 12px 16px;
-            gap: 10px;
         }
 
         .ambiance-label {
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 1px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
             text-transform: uppercase;
             color: var(--text-muted);
         }
 
         .ambiance-options {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 8px;
         }
 
         .ambiance-btn {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--text-muted);
-            padding: 6px 12px;
-            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 8px 10px;
+            border-radius: 12px;
             font-size: 11px;
             font-weight: 600;
             cursor: pointer;
             transition: var(--transition-smooth);
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 6px;
+            text-align: left;
         }
 
         .ambiance-btn.active, .ambiance-btn:hover {
             background: var(--accent-gold-gradient);
-            color: #070709;
+            color: var(--btn-text);
             border-color: transparent;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         /* SEARCH BAR */
@@ -295,8 +323,8 @@
             align-items: center;
             gap: 12px;
             padding: 14px 18px;
-            background: rgba(18, 18, 26, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
             border-radius: 50px;
             backdrop-filter: blur(12px);
             transition: var(--transition-smooth);
@@ -330,7 +358,7 @@
 
         /* HERO BANNER */
         .hero-banner {
-            background: linear-gradient(135deg, rgba(28, 20, 50, 0.8) 0%, rgba(15, 15, 22, 0.9) 100%);
+            background: var(--card-bg);
             border: 1px solid var(--border-color);
             position: relative;
             overflow: hidden;
@@ -347,7 +375,7 @@
             font-size: 11px;
             font-weight: 600;
             letter-spacing: 1.5px;
-            color: var(--accent-gold-light);
+            color: var(--accent-gold);
             text-transform: uppercase;
             margin-bottom: 12px;
         }
@@ -368,7 +396,7 @@
 
         .action-btn-gold {
             background: var(--accent-gold-gradient);
-            color: #070709;
+            color: var(--btn-text);
             font-weight: 700;
             font-size: 13px;
             letter-spacing: 1px;
@@ -377,7 +405,7 @@
             border-radius: 50px;
             border: none;
             cursor: pointer;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
             transition: var(--transition-smooth);
             display: inline-flex;
             align-items: center;
@@ -387,7 +415,7 @@
 
         .action-btn-gold:hover {
             transform: translateY(-2px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
         }
 
         /* QUICK ACTIONS */
@@ -419,8 +447,8 @@
         }
 
         .quick-action-item {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
             padding: 16px 8px;
             display: flex;
@@ -432,8 +460,8 @@
         }
 
         .quick-action-item:hover {
-            background: rgba(212, 175, 55, 0.08);
-            border-color: var(--border-color);
+            background: var(--card-bg-hover);
+            border-color: var(--border-glow);
             transform: translateY(-3px);
         }
 
@@ -441,7 +469,7 @@
             width: 42px;
             height: 42px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.04);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -451,7 +479,7 @@
 
         .quick-action-item:hover .quick-action-icon {
             background: var(--accent-gold-gradient);
-            color: #070709;
+            color: var(--btn-text);
         }
 
         .quick-action-label {
@@ -468,12 +496,13 @@
             padding: 24px;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
             aspect-ratio: 1.58 / 1;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             transition: transform 0.1s ease-out;
+            color: #F3F4F6;
         }
 
         .credit-card::before {
@@ -530,7 +559,7 @@
         .card-holder-label {
             font-size: 9px;
             letter-spacing: 1px;
-            color: var(--text-muted);
+            color: #9CA3AF;
             text-transform: uppercase;
             margin-bottom: 2px;
         }
@@ -550,8 +579,8 @@
         }
 
         .metric-card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
             padding: 16px;
             display: flex;
@@ -612,15 +641,15 @@
             align-items: center;
             justify-content: space-between;
             padding: 12px;
-            background: rgba(255, 255, 255, 0.02);
+            background: var(--card-bg);
             border-radius: var(--radius-sm);
-            border: 1px solid rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-color);
             transition: var(--transition-smooth);
         }
 
         .portfolio-item:hover {
-            background: rgba(255, 255, 255, 0.05);
-            border-color: var(--border-color);
+            background: var(--card-bg-hover);
+            border-color: var(--border-glow);
         }
 
         .portfolio-info {
@@ -666,8 +695,8 @@
         }
 
         .featured-card {
-            background: linear-gradient(160deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.01) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
             padding: 16px;
         }
@@ -688,7 +717,7 @@
             display: flex;
             align-items: center;
             gap: 14px;
-            background: rgba(20, 20, 30, 0.8);
+            background: var(--card-bg);
             border: 1px solid var(--border-color);
             padding: 14px;
         }
@@ -738,7 +767,7 @@
             height: 34px;
             border-radius: 50%;
             background: var(--accent-gold-gradient);
-            color: #000;
+            color: var(--btn-text);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -749,7 +778,7 @@
             display: flex;
             gap: 12px;
             padding: 12px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid var(--border-color);
         }
 
         .notif-item:last-child {
@@ -785,7 +814,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 12px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid var(--border-color);
         }
 
         .setting-row:last-child {
@@ -806,7 +835,7 @@
             position: relative;
             width: 44px;
             height: 24px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(0, 0, 0, 0.1);
             border-radius: 30px;
             cursor: pointer;
             transition: background 0.3s;
@@ -840,7 +869,7 @@
             transform: translateX(-50%);
             width: calc(100% - 30px);
             max-width: 450px;
-            background: rgba(12, 12, 18, 0.85);
+            background: var(--nav-bg);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border: 1px solid var(--border-color);
@@ -850,7 +879,7 @@
             justify-content: space-around;
             align-items: center;
             z-index: 100;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }
 
         .nav-item {
@@ -943,18 +972,21 @@
             </div>
         </header>
 
-        <!-- SÉLECTEUR D'AMBIANCE (3 THÈMES) -->
+        <!-- SÉLECTEUR D'AMBIANCE (4 THÈMES) -->
         <div class="ambiance-selector-container">
-            <span class="ambiance-label">Ambiance</span>
+            <span class="ambiance-label">Sélecteur d'Ambiance</span>
             <div class="ambiance-options">
                 <button class="ambiance-btn active" data-theme="gold" onclick="switchTheme('gold')">
-                    ✦ Gold
+                    ✦ Luxe Doré
                 </button>
-                <button class="ambiance-btn" data-theme="cyberpunk" onclick="switchTheme('cyberpunk')">
-                    ⚡ Neon
+                <button class="ambiance-btn" data-theme="amber-honey" onclick="switchTheme('amber-honey')">
+                    🍯 Amber Honey
                 </button>
-                <button class="ambiance-btn" data-theme="serene" onclick="switchTheme('serene')">
-                    🌿 Serein
+                <button class="ambiance-btn" data-theme="terracotta" onclick="switchTheme('terracotta')">
+                    🏜️ Terracotta
+                </button>
+                <button class="ambiance-btn" data-theme="bamboo-olive" onclick="switchTheme('bamboo-olive')">
+                    🌿 Golden Bamboo
                 </button>
             </div>
         </div>
@@ -970,7 +1002,7 @@
             <span class="badge-tag">✦ Privilèges Exclusifs</span>
             <h2 class="hero-title">Welcome Back</h2>
             <p class="hero-desc">
-                Expérience haut de gamme optimisée : verre sculpté, accents dorés, réactivité haptique et intelligence artificielle dédiée.
+                Expérience haut de gamme optimisée : verre sculpté, accents organiques, réactivité haptique et intelligence artificielle dédiée.
             </p>
             <button class="action-btn-gold" onclick="triggerHaptic()">
                 Explorer l'Espace Elite
@@ -1129,8 +1161,8 @@
                 <h3>Contenu Exclusif</h3>
                 <p>Débloquez le coffre-fort d'analyses stratégiques et de conseils privés.</p>
             </div>
-            <div class="featured-card" style="border-color: rgba(139, 92, 246, 0.3);">
-                <span class="badge-tag" style="font-size: 8px; padding: 2px 6px; background: rgba(139, 92, 246, 0.15); color: #C4B5FD; border-color: rgba(139, 92, 246, 0.3);">IA ASSISTANT</span>
+            <div class="featured-card">
+                <span class="badge-tag" style="font-size: 8px; padding: 2px 6px;">IA ASSISTANT</span>
                 <h3>Recommandations</h3>
                 <p>Analyse prédictive automatisée et alertes de conciergerie 24/7.</p>
             </div>
@@ -1142,8 +1174,8 @@
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
             </div>
             <div class="player-info">
-                <div class="player-title">Midnight Dreams</div>
-                <div class="player-artist">Premium Studio • Relax Ambiance</div>
+                <div class="player-title">Golden Hour Serenade</div>
+                <div class="player-artist">Premium Studio • Ambiance Solaire</div>
             </div>
             <div class="player-controls">
                 <button class="control-btn" onclick="triggerHaptic()">
@@ -1198,8 +1230,8 @@
             </div>
             <div class="setting-row">
                 <div>
-                    <div class="setting-title">Thème Sombre Luxe</div>
-                    <div class="setting-sub">Apparence obscurcie optimisée OLED</div>
+                    <div class="setting-title">Rendu Équilibré</div>
+                    <div class="setting-sub">Adaptation automatique selon les lumières ambiantes</div>
                 </div>
                 <div class="toggle-switch active" onclick="this.classList.toggle('active'); triggerHaptic();"></div>
             </div>
@@ -1220,7 +1252,7 @@
         </section>
 
         <!-- UPGRADE TO ELITE BANNER -->
-        <section class="glass-card" style="background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%); border-color: var(--border-color); text-align: center; padding: 30px 20px;">
+        <section class="glass-card" style="text-align: center; padding: 30px 20px;">
             <span class="badge-tag">OFFRE LIMITÉE</span>
             <h2 class="font-serif gold-text" style="font-size: 28px; margin: 10px 0;">Passer à l'Édition Elite</h2>
             <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px; line-height: 1.5;">
@@ -1254,7 +1286,7 @@
     </nav>
 
     <script>
-        // Gestion du sélecteur d'ambiances
+        // Gestion du sélecteur d'ambiances (4 thèmes)
         function switchTheme(themeName) {
             triggerHaptic();
             const root = document.documentElement;
