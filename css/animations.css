@@ -1,0 +1,548 @@
+/*=========================================================
+  ANIMATIONS.CSS
+  Premium UI Animations
+=========================================================*/
+
+
+/*=========================================================
+KEYFRAMES
+=========================================================*/
+
+
+/* Apparition douce */
+
+@keyframes fadeIn{
+
+0%{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* Montée */
+
+@keyframes slideUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(60px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* Descente */
+
+@keyframes slideDown{
+
+0%{
+
+opacity:0;
+
+transform:translateY(-40px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* Zoom */
+
+@keyframes zoomIn{
+
+0%{
+
+opacity:0;
+
+transform:scale(.85);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+
+/* Flottement */
+
+@keyframes floating{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* Respiration */
+
+@keyframes breathing{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.03);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+
+/* Halo violet */
+
+@keyframes purpleGlow{
+
+0%{
+
+box-shadow:
+
+0 0 15px rgba(160,0,255,.25);
+
+}
+
+50%{
+
+box-shadow:
+
+0 0 40px rgba(160,0,255,.65),
+
+0 0 90px rgba(160,0,255,.25);
+
+}
+
+100%{
+
+box-shadow:
+
+0 0 15px rgba(160,0,255,.25);
+
+}
+
+}
+
+
+/* Halo doré */
+
+@keyframes goldGlow{
+
+0%{
+
+box-shadow:
+
+0 0 12px rgba(255,210,120,.18);
+
+}
+
+50%{
+
+box-shadow:
+
+0 0 40px rgba(255,210,120,.60),
+
+0 0 90px rgba(255,210,120,.25);
+
+}
+
+100%{
+
+box-shadow:
+
+0 0 12px rgba(255,210,120,.18);
+
+}
+
+}
+
+
+/* Rotation */
+
+@keyframes rotateSlow{
+
+0%{
+
+transform:rotate(0deg);
+
+}
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+
+/* Rotation inverse */
+
+@keyframes rotateReverse{
+
+0%{
+
+transform:rotate(360deg);
+
+}
+
+100%{
+
+transform:rotate(0deg);
+
+}
+
+}
+
+
+/* Pulse */
+
+@keyframes pulse{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.08);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+
+/* Shine */
+
+@keyframes shine{
+
+0%{
+
+left:-140%;
+
+}
+
+100%{
+
+left:140%;
+
+}
+
+}
+
+
+/*=========================================================
+ANIMATION CLASSES
+=========================================================*/
+
+.fade-in{
+
+animation:fadeIn .6s ease forwards;
+
+}
+
+.slide-up{
+
+animation:slideUp .6s ease forwards;
+
+}
+
+.slide-down{
+
+animation:slideDown .6s ease forwards;
+
+}
+
+.zoom-in{
+
+animation:zoomIn .45s ease forwards;
+
+}
+
+.floating{
+
+animation:floating 4s ease-in-out infinite;
+
+}
+
+.breathing{
+
+animation:breathing 3s ease-in-out infinite;
+
+}
+
+.glow-purple{
+
+animation:purpleGlow 2.5s infinite;
+
+}
+
+.glow-gold{
+
+animation:goldGlow 2.5s infinite;
+
+}
+
+.rotate{
+
+animation:rotateSlow 18s linear infinite;
+
+}
+
+.rotate-reverse{
+
+animation:rotateReverse 25s linear infinite;
+
+}
+
+.pulse{
+
+animation:pulse 2s infinite;
+
+}
+
+
+/*=========================================================
+HOVER EFFECTS
+=========================================================*/
+
+.hover-lift{
+
+transition:
+
+transform .35s,
+
+box-shadow .35s;
+
+}
+
+.hover-lift:hover{
+
+transform:
+
+translateY(-8px)
+
+scale(1.02);
+
+}
+
+.hover-scale{
+
+transition:transform .3s;
+
+}
+
+.hover-scale:hover{
+
+transform:scale(1.05);
+
+}
+
+.hover-glow:hover{
+
+box-shadow:
+
+0 0 25px rgba(255,210,120,.35),
+
+0 0 50px rgba(160,0,255,.20);
+
+}
+
+
+/*=========================================================
+SHINE EFFECT
+=========================================================*/
+
+.shine{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.shine::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:45%;
+
+height:100%;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+transparent,
+
+rgba(255,255,255,.45),
+
+transparent
+
+);
+
+transform:skewX(-25deg);
+
+animation:shine 5s infinite;
+
+}
+
+
+/*=========================================================
+CARD ANIMATION
+=========================================================*/
+
+.card{
+
+transition:
+
+transform .4s,
+
+box-shadow .4s,
+
+background .4s;
+
+}
+
+.card:hover{
+
+transform:
+
+translateY(-6px)
+
+scale(1.015);
+
+}
+
+
+/*=========================================================
+BUTTON PRESS
+=========================================================*/
+
+button:active{
+
+transform:scale(.96);
+
+}
+
+
+/*=========================================================
+SMOOTH PAGE TRANSITION
+=========================================================*/
+
+.page{
+
+animation:fadeIn .7s ease;
+
+}
+
+
+/*=========================================================
+DELAY HELPERS
+=========================================================*/
+
+.delay-1{
+
+animation-delay:.1s;
+
+}
+
+.delay-2{
+
+animation-delay:.2s;
+
+}
+
+.delay-3{
+
+animation-delay:.3s;
+
+}
+
+.delay-4{
+
+animation-delay:.4s;
+
+}
+
+.delay-5{
+
+animation-delay:.5s;
+
+}
